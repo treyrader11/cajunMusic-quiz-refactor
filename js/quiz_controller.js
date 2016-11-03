@@ -12,16 +12,17 @@ Quiz.prototype.getQuestionIndex = function() {
 
 Quiz.prototype.isEnded = function() {
 	return this.questions.length === this.questionIndex; 
-	console.log(quiz.questions.length);
+	console.log("inside isEnded:", quiz.questions.length);
 }
 
 Quiz.prototype.guess = function(guess) {
-	this.questionIndex++;
+	
 
 	console.log("You chose:", guess);
 	//console.log(quiz.getQuestionIndex());
 	if(this.getQuestionIndex().correctAnswer(guess)) { //if guess === this.answer
 		this.score++;  
 	}
+	this.questionIndex++;
 }
 
