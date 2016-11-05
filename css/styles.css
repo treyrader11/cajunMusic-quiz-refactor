@@ -20,7 +20,7 @@ body {
 
 .grid {
 	width: 600px;
-	height: 500px;
+	height: 600px;
 	margin: 0 auto;
 	padding: 10px 50px 50px 50px;
 	border-radius: 50px;
@@ -51,6 +51,7 @@ body {
 	background: black ;
 	border-radius: 50px;
 	opacity: .7;
+	margin-top: 82px;
 }
 
 #results > button,
@@ -68,6 +69,7 @@ body {
 	color: #fff;
 	padding: 2px 0px;
 	border-radius: 50px;
+	margin-top: 43px;
 
 }
 
@@ -76,6 +78,7 @@ body {
 	font-size: 20px;
 	color: rgb(32, 35, 32);
 	font-weight: 600;
+	margin-top: 39px;
 }
 
 .buttons {

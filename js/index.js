@@ -85,6 +85,7 @@ function showScores() {
 		restartQuiz();
 		$('#results').hide('slide', function() {
 			$('#quiz').show('slide');
+			$('footer').show();
 		})
 	}
 }
