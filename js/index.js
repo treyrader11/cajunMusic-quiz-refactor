@@ -6,7 +6,7 @@ var questions = [
 	new Question('Which two Cajun artists are credited to have been the first to record the Cajun standard, "Allons a Lafayette?"', ["Dennis Mcgee and Sadie Courville", "Canray Fontenot and Bois Sec Ardoin", "Joe Falcon and Cleoma Breaux", "Dewey and Rodney Balfa"], "Joe Falcon and Cleoma Breaux"),
 	new Question('In which city is fiddler Dennis Mcgee buried?', ['Mamou', 'Lafayette', 'Opelousas', 'Eunice'], 'Eunice'),
 	new Question('Which Cajun musician wrote the Cajun standard, "Two-step dAmedee"?', ['Marc Savoy', 'Wayne Toups', 'Steve Reily', 'Tom Waits'], 'Marc Savoy'),
-	new Question('What is the difference between a fiddle and a violin?', ['A fiddle you can play Cajun music with and a violin you can play Cajun music too.', 'A fiddle is made of wood and a violin is made of hemicellulose', 'A fiddle costs two dollars and a violin costs 3.', "There isn't any difference"], "There isn't any Difference"),
+	new Question('What is the difference between a fiddle and a violin?', ['A fiddle you can play Cajun music with and a violin you can play Cajun music too.', 'A fiddle is made of wood and a violin is made of hemicellulose', 'A fiddle costs two dollars and a violin costs 3.', "There isn't any difference"], "There isn't any difference"),
 	new Question("Last but not least: How many fingers did Cajun accordion player Silson Wavoy have before he started playing the accordion?", ["5 fingers", "7 fingers", "8 fingers", "All of the above"], "All of the above")
 ];
 var quiz = new Quiz(questions);
@@ -93,7 +93,7 @@ function restartQuiz() {
 	console.log("quiz restarted");
 	$('#quiz').fadeOut(500);
 	quiz.questionIndex = 0;
-	quiz.score = 1;
+	quiz.score = 0;
 	counter = 0;
 	populate();
 }
