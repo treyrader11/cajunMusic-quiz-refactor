@@ -1,7 +1,7 @@
 'use strict'
 
 function Quiz(questions) {
-	this.score = 1;
+	this.score = 0;
 	this.questions = questions; //questions is an array that contain 5 instances of the Question constructor
 	this.questionIndex = 0;
 }
@@ -29,7 +29,7 @@ Quiz.prototype.guess = function(guess) {
 	
 	if(this.getQuestionIndex().correctAnswer(guess)) { //if guess === this.answer
 		this.score++;
-		console.log("this is the correct answer!")  
+		console.log("this is the correct answer!", "you have " +this.score+ " correct.")  
 	}
 	else {
 		console.log("but the correct answer is", '"'+currentAnswer+'"');
