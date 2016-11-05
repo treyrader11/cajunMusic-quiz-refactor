@@ -2,34 +2,49 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Cajun Quiz OOP</title>
+	<title>Cajun Quiz Refactor</title>
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<div class="grid">
-		<div id="quiz">
-			<h1>Cajun Music Quiz</h1>
-			<hr/>
-			<p id="question"></p>
 
-			<div class="buttons">
-				<button id="btn0"><span id="choice0"></span></button>
-				<button id="btn1"><span id="choice1"></span></button>
-				<button id="btn2"><span id="choice2"></span></button>
-				<button id="btn3"><span id="choice3"></span></button>
-			</div>
+<!--first slider/ quiz introduction-->
 
-			<hr/>
-
-			<footer>
-				<p id="progress">question x of y</p>
-				<button id="btn-start">Start Quiz</button>
-			</footer>	
-		</div>
+	<div class="grid bg-image" id="intro">
+		<h1>A Quiz on Cajun Music</h1>
+		<button class="btn" id="btn-start">Start</button>
 	</div>
+
+<!--second slider/quiz questions & options-->
+
+	<div class="grid" id="quiz">
+		<h1>Cajun Music Quiz</h1>
+		<hr/>
+		<p id="question"></p>
+
+		<section class="buttons">
+			<button id="btn0"><span id="choice0"></span></button>
+			<button id="btn1"><span id="choice1"></span></button>
+			<button id="btn2"><span id="choice2"></span></button>
+			<button id="btn3"><span id="choice3"></span></button>
+		</section>	
+	</div>
+
+<!--third slider/quiz results-->
+
+	<div class="grid" id="results">
+
+	</div>
+
+<!--universal footer-->
+
+	<footer>
+		<p id="progress"></p>
+		<p id="answers"></p>
+	</footer>
 
 
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 <script src="js/question.js"></script>
 <script src="js/quiz_controller.js"></script>
 <script src="js/index.js"></script>	

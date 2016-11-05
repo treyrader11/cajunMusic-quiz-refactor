@@ -1,13 +1,19 @@
 'use strict'
 
 function Quiz(questions) {
-	this.score = 0;
+	this.score = 1;
 	this.questions = questions; //questions is an array that contain 5 instances of the Question constructor
 	this.questionIndex = 0;
 }
 
 Quiz.prototype.getQuestionIndex = function() {
-	return this.questions[this.questionIndex]; 
+	return this.questions[this.questionIndex]; // == quiz.questions[0]
+}
+
+Quiz.prototype.getCorrectAnswer = function() {
+	var questionIndex = quiz.getQuestionIndex();
+	var currentCorrectAnswer = questionIndex.answer;
+	return currentCorrectAnswer;
 }
 
 Quiz.prototype.isEnded = function() {
@@ -17,12 +23,18 @@ Quiz.prototype.isEnded = function() {
 
 Quiz.prototype.guess = function(guess) {
 	
-
-	console.log("You chose:", guess);
-	//console.log(quiz.getQuestionIndex());
+	console.log("You chose", '"'+guess+'".');
+	var currentAnswer = quiz.getCorrectAnswer();
+	var element = document.getElementById('answers');
+	
 	if(this.getQuestionIndex().correctAnswer(guess)) { //if guess === this.answer
-		this.score++;  
+		this.score++;
+		console.log("this is the correct answer!")  
+	}
+	else {
+		console.log("but the correct answer is", '"'+currentAnswer+'"');
 	}
 	this.questionIndex++;
+
 }
 

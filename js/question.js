@@ -8,11 +8,6 @@ function Question(text, choices, answer) {
 }
 
 Question.prototype.correctAnswer = function(choice) {
-	return choice === this.answer;
+	return choice === this.answer; //returns a boolean (value that evaluates to true or false)
 }
 
-//var match = quiz.questions[0].correctAnswer(quiz.questions[0].answer[0]);
-
-//console.log(match)
-
-//if quiz.questions[0].answer[answer] === quiz.question[0].answer[index]
