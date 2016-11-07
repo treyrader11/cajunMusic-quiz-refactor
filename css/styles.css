@@ -20,7 +20,7 @@ body {
 
 .grid {
 	width: 600px;
-	height: 500px;
+	height: 600px;
 	margin: 0 auto;
 	padding: 10px 50px 50px 50px;
 	border-radius: 50px;
@@ -32,7 +32,6 @@ body {
 	display: none;
 }
 
-
 .bg-image {
 	/*below is best way to reference image from folder in css. use shorthand*/
 	background: url(../images/WilsonCajun.jpg) no-repeat center center; 
@@ -43,7 +42,6 @@ body {
   	text-align: center;
 }
 
-
 #intro > h1 {
 	color: white;
 	font-size: 55px;
@@ -51,6 +49,7 @@ body {
 	background: black ;
 	border-radius: 50px;
 	opacity: .7;
+	margin-top: 82px;
 }
 
 #results > button,
@@ -60,7 +59,6 @@ body {
 	padding: 18px 41px;
 }
 
-
 #quiz h1 {
 	font-family: sans-serif;
 	background: rgb(32, 35, 32);
@@ -68,6 +66,7 @@ body {
 	color: #fff;
 	padding: 2px 0px;
 	border-radius: 50px;
+	margin-top: 43px;
 
 }
 
@@ -76,6 +75,7 @@ body {
 	font-size: 20px;
 	color: rgb(32, 35, 32);
 	font-weight: 600;
+	margin-top: 39px;
 }
 
 .buttons {
@@ -111,8 +111,6 @@ footer {
 	color: #000;
 	font-size: 24px;
 }
-
-
 
 #scores {
 	color: #000;
