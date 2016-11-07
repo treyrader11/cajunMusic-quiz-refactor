@@ -35,6 +35,5 @@ Quiz.prototype.guess = function(guess) {
 		console.log("but the correct answer is", '"'+currentAnswer+'"');
 	}
 	this.questionIndex++;
-
 }
 
