@@ -12,7 +12,6 @@ var questions = [
 var quiz = new Quiz(questions);
 var counter = 0;
 
-
 startBtn.onclick = function() {
 	$('#intro').hide('slide', function() {
 		$('#quiz').show('slide', function() {
@@ -20,8 +19,6 @@ startBtn.onclick = function() {
 		});
 	});
 }
-
-
 
 function populate() {
 	counter++;
